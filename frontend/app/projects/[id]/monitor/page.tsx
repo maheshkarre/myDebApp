@@ -1,4 +1,3 @@
-'use client';
 
 import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
@@ -45,6 +44,10 @@ interface InferenceResult {
 
 export async function generateStaticParams() {
   return [{ id: '1' }];
+}
+
+export default function TrainLayout({ children }: { children: React.ReactNode }) {
+  return <>{children}</>;
 }
 
 export default function MonitorPage() {
