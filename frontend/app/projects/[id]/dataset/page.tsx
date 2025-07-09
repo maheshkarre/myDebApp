@@ -27,6 +27,13 @@ interface UploadedImage {
 }
 
 
+export async function generateStaticParams() {
+  return [{ id: '1' }]; // Replace with actual IDs if needed
+}
+
+export default function TrainLayout({ children }: { children: React.ReactNode }) {
+  return <>{children}</>;
+}
 
 export default function DatasetPage() {
   const router = useRouter();
