@@ -26,9 +26,7 @@ interface UploadedImage {
   label: string;
 }
 
-export async function generateStaticParams() {
-  return [{ id: '1' }];
-}
+
 
 export default function DatasetPage() {
   const router = useRouter();
