@@ -1,5 +1,3 @@
-'use client';
-
 import { useState } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -49,7 +47,11 @@ interface Device {
 }
 
 export async function generateStaticParams() {
-  return [{ id: '1' }];
+  return [{ id: '1' }]; // Replace with actual IDs if needed
+}
+
+export default function TrainLayout({ children }: { children: React.ReactNode }) {
+  return <>{children}</>;
 }
 
 export default function DeployPage() {
